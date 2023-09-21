@@ -31,8 +31,7 @@ class Snake:
             self. Snake_segment.append(new_segment)
 
     def extend(self):
-        self.add_position(self.Snake_segment[-1].position)
-
+        self.add_position(self.Snake_segment[-1].position())
     def move(self):
         for i in range((len(self.Snake_segment)-1),0,-1):
             new_xcor = self.Snake_segment[i-1].xcor()
@@ -47,10 +46,9 @@ class Snake:
         self.head.setheading(up)
     def left(self):
         self.head.setheading(left)
+
     def right(self):
         self.head.setheading(right)
-
-
 
 
 

@@ -14,7 +14,7 @@ class Food(Turtle):  ##Class Inheritance ##
         self.refresh()
 
 
-
+    ##Food location change
     def refresh(self):
         self.random_x = random.randint(-280, 280)
         self.random_y = random.randint(-280, 280)
